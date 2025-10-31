@@ -1,5 +1,7 @@
 body {
-  background-color: #000;
+  background-color: #141414;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar {
@@ -70,6 +72,58 @@ body {
 .layout-icons i:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.scrollable-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none;
+}
+
+.col-2 {
+  flex: 0 0 auto; /* evita che le colonne si ridimensionino */
+}
+
+.img-fluid {
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.img-fluid:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+.netflix-footer {
+  color: #808080;
+  font-size: 0.9rem;
+  background-color: #141414;
+}
+
+.footer-link {
+  color: #808080;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.netflix-footer .btn-outline-secondary {
+  border-color: #808080;
+  color: #808080;
+  border-radius: 0;
+}
+
+.netflix-footer .btn-outline-secondary:hover {
+  background-color: #808080;
+  color: #141414;
 }
 
 /* 🔽 Responsiveness */
