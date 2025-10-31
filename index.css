@@ -1,14 +1,5 @@
-/* Netflix Style – minimal custom CSS */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* Scroll orizzontale per le righe film */
-.overflow-auto {
-  scrollbar-width: none;
-}
-.overflow-auto::-webkit-scrollbar {
-  display: none;
 }
 
 /* Hover effetto zoom */
