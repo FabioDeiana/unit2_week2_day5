@@ -1,150 +1,27 @@
+/* Netflix Style – minimal custom CSS */
 body {
-  background-color: #141414;
-  color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar {
-  background-color: #141414 !important;
-}
-
-.nav-link {
-  color: #e5e5e5 !important;
-  font-size: 0.9rem;
-  margin-right: 15px;
-}
-
-.nav-link:hover {
-  color: #fff !important;
-}
-
-.nav-icons i {
-  color: #e5e5e5;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.nav-icons i:hover {
-  color: #fff;
-}
-
-.profile-img {
-  width: 30px;
-  height: 30px;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.tvshows-bar {
-  background-color: #141414;
-}
-
-.tvshows-bar h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.tvshows-bar .dropdown-toggle {
-  font-size: 0.85rem;
-  border-radius: 2px;
-  border-color: #888;
-}
-
-.tvshows-bar .dropdown-menu {
-  border: none;
-}
-
-.tvshows-bar .dropdown-item:hover {
-  background-color: #333;
-}
-
-.layout-icons i {
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  transition: all 0.2s ease;
-  opacity: 0.85;
-}
-
-.layout-icons i:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.scrollable-row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
+/* Scroll orizzontale per le righe film */
+.overflow-auto {
   scrollbar-width: none;
 }
-
-.scrollable-row::-webkit-scrollbar {
+.overflow-auto::-webkit-scrollbar {
   display: none;
 }
 
-.col-2 {
-  flex: 0 0 auto; /* evita che le colonne si ridimensionino */
-}
-
+/* Hover effetto zoom */
 .img-fluid {
-  border-radius: 4px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-
 .img-fluid:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   z-index: 5;
 }
 
-.netflix-footer {
-  color: #808080;
-  font-size: 0.9rem;
-  background-color: #141414;
-}
-
-.footer-link {
-  color: #808080;
-  text-decoration: none;
-  margin-bottom: 6px;
-}
-
-.footer-link:hover {
-  color: #fff;
-}
-
-.netflix-footer .btn-outline-secondary {
-  border-color: #808080;
-  color: #808080;
-  border-radius: 0;
-}
-
-.netflix-footer .btn-outline-secondary:hover {
-  background-color: #808080;
-  color: #141414;
-}
-
-/* 🔽 Responsiveness */
-@media (max-width: 768px) {
-  .tvshows-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .layout-icons {
-    display: flex;
-    align-items: center;
-  }
-
-  .layout-icons i + i {
-    margin-left: 6px; /* Spazio tra le due icone */
-  }
-
-  .tvshows-bar h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
+/* Footer */
+.netflix-footer a:hover {
+  color: #fff !important;
 }
